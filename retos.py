@@ -1,3 +1,9 @@
+import math;
+def area_triangulo (s1:float, s2:float, s3:float):
+    s = (s1+s2+s3)/2
+    area= math.sqrt ( s * (s-s1) * (s-s2) * (s-s3) )
+    return round (area, 1)
+
 def calcular_horario_llegada(hora_salida: int, minuto_salida: int, segundo_salida: int, duracion_horas: int, duracion_minutos: int, duracion_segundos: int) -> str:
     total_segundos_salida = hora_salida * 3600 + minuto_salida * 60 + segundo_salida
     total_segundos_duracion = duracion_horas * 3600 + duracion_minutos * 60 + duracion_segundos
